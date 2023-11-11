@@ -34,11 +34,13 @@
          id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Clarence Taylor</span>
-            <span class="d-none d-lg-block">
+                @foreach (var item in Model)
+                {
+            <span class="d-none d-lg-block">                           
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                     src="/portfolio/assets/img/profile.jpg"
+                     src="@item.Resim"
                      alt="Ufuk Karayel" />
-            </span>
+            </span> }
         </a>
         <button class="navbar-toggler"
                 type="button"
@@ -79,8 +81,6 @@
 
         @foreach (var x in Model)
         {
-
-
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
