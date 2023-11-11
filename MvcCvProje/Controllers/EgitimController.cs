@@ -8,10 +8,12 @@ using System.Web.Mvc;
 
 namespace MvcCvProje.Controllers
 {
+    
     public class EgitimController : Controller
     {
         GenericRepository<TblEgitimlerim> repo = new GenericRepository<TblEgitimlerim>();
         // GET: Egitim
+        
         public ActionResult Index()
         {
             var egitim = repo.List();
