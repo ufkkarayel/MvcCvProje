@@ -8,7 +8,7 @@ using MvcCvProje.Repositories;
 
 namespace MvcCvProje.Controllers
 {
-    [AllowAnonymous]
+   
     public class AdminController : Controller
     {
         // GET: Admin
